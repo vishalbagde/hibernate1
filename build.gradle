@@ -1,0 +1,16 @@
+
+
+apply plugin : 'java'
+apply plugin : 'application'
+apply plugin : 'eclipse'
+
+mainClassName = 'main.Main'
+
+repositories{
+       mavenCentral();	
+}
+dependencies{
+	compile 'org.hibernate:hibernate-core:5.3.2.Final'
+	compile 'org.postgresql:postgresql:42.2.2'
+	compile group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.1-api', version: '1.0.2'
+}
